@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Final HomePage.master.cs" Inherits="WebApplication3.Final_HomePage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TSS</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+            font-family:Arial;
+        }
+        body
+        {
+            background:#f1eeee;
+        }
+        header
+        {
+            width:1000px;
+            background:#777fc1;
+            margin:auto;
+            padding:10px;
+            color:white;
+        }
+         footer{
+            width:1000px;
+            background:#777fc1;
+            margin:auto;
+            padding:10px;
+            color:white;
+        }
+        .ctable
+        {
+            padding:10px;
+            background:white;
+            margin:auto;
+        }
+        .ctable td
+        {
+            padding:10px;
+        }
+        nav
+        {
+            height:50px;
+            width:1000px;
+            margin: 10px auto;
+            border-bottom:1px solid #3244d5;
+        }
+        nav li
+        {
+            float:left;
+            list-style:none;
+
+        }
+       nav li a
+       {
+           height:50px;
+           line-height:50px;
+           padding:0px 30px;
+           background:#3244d5;
+           color:white;
+           display:block;
+           margin-right:10px;
+           text-decoration:none;
+       }
+       nav li a:hover
+       {
+           color:#0c1735;
+           font-size:22px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+  <h1 align="center"><marquee>Welcome to Technical Supporter</marquee></h1>
+     </header>
+    <nav>
+        <ul>
+            <li><a href="Indexff.aspx">Home</a></li>
+            <li><a href="Aboutff.aspx">About</a></li>
+            <li><a href="Contactff.aspx">Contact Us</a></li>
+            <li><a href="Loginff.aspx">Login</a></li>
+        </ul>
+    </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   <footer>
+    <p align="center">Copyright @ 2020 TSS Inc.</p>
+    </footer>
+</body>
+</html>

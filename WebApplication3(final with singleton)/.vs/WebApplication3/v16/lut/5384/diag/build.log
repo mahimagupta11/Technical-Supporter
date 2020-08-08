@@ -1,0 +1,34 @@
+[02:31:05.691 Error] - FatalError - System.ArgumentException: Inconsistent language versions
+Parameter name: syntaxTrees
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.CommonLanguageVersion(ImmutableArray`1 syntaxTrees)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation..ctor(String assemblyName, CSharpCompilationOptions options, ImmutableArray`1 references, CSharpCompilation previousSubmission, Type submissionReturnType, Type hostObjectType, Boolean isSubmission, ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations, IReadOnlyDictionary`2 features, AsyncQueue`1 eventQueue)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation..ctor(String assemblyName, CSharpCompilationOptions options, ImmutableArray`1 references, CSharpCompilation previousSubmission, Type submissionReturnType, Type hostObjectType, Boolean isSubmission, ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations, AsyncQueue`1 eventQueue)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.Update(ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddSyntaxTrees(IEnumerable`1 trees)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.CommonAddSyntaxTrees(IEnumerable`1 trees)
+   at Microsoft.CodeAnalysis.LiveUnitTesting.BuildManagement.CompilationComparer.GetUpdatedCompilation(Compilation compilation, CommandLineArguments arguments, Logger logger, BuildDifference& differences)
+   at Microsoft.CodeAnalysis.LiveUnitTesting.BuildManagement.EmitHelper.<EmitAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.CodeAnalysis.LiveUnitTesting.BuildManagement.BuildService.<EmitSingleProjectAsync>d__65.MoveNext()
+[02:31:05.691 Verbose] - BuildManager - E:\Technical Supporter Project\WebApplication3(final with singleton)\packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CSharp.Core.targets(67,5): error MSB4181: The "Csc" task returned false but did not log an error.
+[02:31:05.695 Verbose] - BuildManager - Some of the file paths defined in the csproj under the Live Unit Testing build path are missing. Verify whether these files should be present under the Live Unit Testing build path and if necessary update the csproj definition to look these files up in a different place.
+[02:31:05.696 Verbose] - BuildManager - Item _OutputPathItem 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\' evaluated via:
+_OutputPathItem: '$(OutDir)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:272
+  OutDir: 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:0
+[02:31:05.696 Verbose] - BuildManager - Item AppConfigFileDestination 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\WebApplication3.dll.config' evaluated via:
+AppConfigFileDestination: '$(OutDir)$(TargetFileName).config' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:303
+  OutDir: 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:0
+  TargetFileName: '$(TargetName)$(TargetExt)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:212
+    TargetName: '$(AssemblyName)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:204
+      AssemblyName: 'WebApplication3' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:17
+    TargetExt: '.dll' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:183
+[02:31:05.696 Verbose] - BuildManager - Item _DebugSymbolsOutputPath 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\WebApplication3.pdb' evaluated via:
+_DebugSymbolsOutputPath: '@(_DebugSymbolsIntermediatePath->'$(OutDir)%(Filename)%(Extension)')' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:372
+  OutDir: 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:0
+[02:31:05.696 Verbose] - BuildManager - Item _ApplicationManifestFinal 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\Native.WebApplication3.manifest' evaluated via:
+_ApplicationManifestFinal: '$(OutDir)$(_DeploymentTargetApplicationManifestFileName)' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:410
+  OutDir: 'E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\b\WebApplication3\bin\' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:0
+  _DeploymentTargetApplicationManifestFileName: 'Native.$(AssemblyName).manifest' @ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets:228
+    AssemblyName: 'WebApplication3' @ E:\Technical Supporter Project\WebApplication3(final with singleton)\WebApplication3\WebApplication3.csproj:17

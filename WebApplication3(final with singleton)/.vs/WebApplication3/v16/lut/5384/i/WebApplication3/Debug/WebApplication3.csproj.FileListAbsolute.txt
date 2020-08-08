@@ -1,0 +1,2 @@
+E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\i\WebApplication3\Debug\WebApplication3.csprojAssemblyReference.cache
+E:\Technical Supporter Project\WebApplication3(final with singleton)\.vs\WebApplication3\v16\lut\0\i\WebApplication3\Debug\WebApplication3.csproj.CoreCompileInputs.cache

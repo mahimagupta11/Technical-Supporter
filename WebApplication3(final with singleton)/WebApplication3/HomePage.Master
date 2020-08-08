@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomePage.master.cs" Inherits="WebApplication3.HomePage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TSS</title>
+
+    <link href="css/loginPage.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+            font-family:Arial;
+        }
+        body
+        {
+            background:#f1eeee;
+        }
+        header
+        {
+            width:1000px;
+            background:#777fc1;
+            margin:auto;
+            padding:10px;
+            color:white;
+        }
+        .ctable
+        {
+            padding:10px;
+            background:white;
+            margin:auto;
+        }
+        .ctable td
+        {
+            padding:10px;
+        }
+        nav
+        {
+            height:50px;
+            width:1000px;
+            margin: 10px auto;
+            border-bottom:1px solid #3244d5;
+        }
+        nav li
+        {
+            float:left;
+            list-style:none;
+
+        }
+       nav li a
+       {
+           height:50px;
+           line-height:50px;
+           padding:0px 30px;
+           background:#3244d5;
+           color:white;
+           display:block;
+           margin-right:10px;
+           text-decoration:none;
+       }
+       nav li a:hover
+       {
+           color:#0c1735;
+           font-size:22px;
+       }
+    </style>
+</head>
+   
+<body>
+     <form id="form1" runat="server">
+     <header>
+  <center><marquee><h1>Welcome to Technical Supporter</h1></marquee></center>
+     </header>
+    <nav>
+        <ul>
+            <li><a href="Index.aspx">Home</a></li>
+            <li><a href="About.aspx">About</a></li>
+            <li><a href="Contact.aspx">Contact Us</a></li>
+            <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Employee Login</asp:LinkButton></li>
+            <li><asp:LinkButton ID="LinkButton2" runat="server" OnClientClick="if (!validate()) { return false;};" OnClick="LinkButton2_Click" >Logout</asp:LinkButton></li>
+            <li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Admin Login</asp:LinkButton></li>
+          
+        </ul>
+    </nav>
+          <script language="javascript" type="text/javascript" >  
+              function validate() {
+                  return(
+                  confirm('Are you Sure ?'))
+              }
+              </script>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         </form>
+</body>
+</html>

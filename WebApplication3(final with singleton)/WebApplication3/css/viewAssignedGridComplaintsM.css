@@ -1,0 +1,47 @@
+﻿  .button 
+{
+    background-color: dodgerblue;
+    padding: 10px 26px;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana;
+}
+.button:hover
+{
+    background-color:white;
+    color:black;
+}
+
+ .btn 
+{
+    background-color: lightblue;
+    padding: 10px 26px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana;
+}
+.btn:hover
+{
+    background-color:white;
+    color:black;
+}
+
+.bn 
+{
+    background-color: lightblue;
+    padding: 10px 26px;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana;
+}
+.bn:hover
+{
+    background-color:white;
+    color:black;
+}

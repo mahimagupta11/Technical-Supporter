@@ -1,0 +1,26 @@
+﻿.button 
+{
+    background-color: dodgerblue;
+    padding: 10px 26px;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    width:50%;
+    font-size: 18px;
+    font-family: Verdana;
+}
+.button:hover
+{
+    background-color:white;
+    color:black;
+}
+
+.label
+{
+   background-color: cyan;
+    color :blue;
+    /*border:solid 2px solid Red;
+    font-family :'Times New Roman', Times, serif;
+    font-size :medium;*/
+    
+    }
